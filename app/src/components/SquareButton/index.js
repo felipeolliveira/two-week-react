@@ -1,7 +1,9 @@
 import React from "react";
 
+import "./style.css"
+
 const SquareButton = () => (
-  <button></button>;
+  <button className="square-button">x</button>
 )
 
 export default SquareButton;

@@ -4,10 +4,12 @@ import "./style.css"
 import SquareButton from "./../SquareButton"
 
 
-const squaresMultiplier = (number, component) => {
+const squaresMultiplier = (number) => {
   const arrayComponents = [];
-
-  for (let i = 0; i < number; i++) {
+  let i = 0;
+  
+  for (i; i < number; i++) {
+    const component = <SquareButton key={i}/>
     arrayComponents.push(component);
   }
 
@@ -16,7 +18,7 @@ const squaresMultiplier = (number, component) => {
 
 const BoardSquare = () => (
   <article className="board-square">
-    {squaresMultiplier(9, <SquareButton />)}
+    {squaresMultiplier(9)}
   </article>
 )
 

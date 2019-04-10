@@ -1,8 +1,17 @@
 import React from "react";
 
-import BoardSquare from "./components/BoardSquare"
+import "./style/reset.css"
+import "./style/base.css"
 
-const App = () => <BoardSquare />
+import BoardSquare from "./components/BoardSquare";
+import GameWrapper from "./components/GameWrapper";
+import GameTitle from "./components/GameTitle";
+
+const App = () => (
+  <GameWrapper>
+    <GameTitle />
+    <BoardSquare />
+  </GameWrapper>
+);
 
 export default App;
-

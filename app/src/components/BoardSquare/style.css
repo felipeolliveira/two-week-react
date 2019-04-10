@@ -1,4 +1,6 @@
 .board-square {
-  width: 600px;
-  box-sizing: border-box;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
 }

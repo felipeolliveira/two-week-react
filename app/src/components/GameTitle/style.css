@@ -1,0 +1,9 @@
+.game-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}

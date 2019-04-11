@@ -16,9 +16,9 @@ const squaresMultiplier = (number) => {
   return arrayComponents;
 }
 
-const BoardSquare = () => (
+const BoardSquare = (props) => (
   <article className="board-square">
-    {squaresMultiplier(9)}
+    {squaresMultiplier(props.squads)}
   </article>
 )
 

@@ -6,11 +6,13 @@ import "./style/base.css"
 import BoardSquare from "./components/BoardSquare";
 import GameWrapper from "./components/GameWrapper";
 import GameTitle from "./components/GameTitle";
+import NextPlayer from "./components/NextPlayer";
 
 const App = () => (
   <GameWrapper>
     <GameTitle />
-    <BoardSquare />
+    <BoardSquare squads="9" />
+    <NextPlayer />
   </GameWrapper>
 );
 

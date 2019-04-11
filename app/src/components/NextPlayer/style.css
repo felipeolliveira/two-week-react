@@ -1,0 +1,10 @@
+.next-player {
+  width: 300px;
+  margin-top: 50px;
+  color: #e84393;
+  border: 2px solid #e84393;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 40px;
+  text-transform: uppercase;
+}

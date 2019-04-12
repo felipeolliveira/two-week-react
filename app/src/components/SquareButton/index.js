@@ -12,9 +12,9 @@ class SquareButton extends Component {
   }
 
   handletoggleChoise = () => {
-    this.setState({
-      player: (this.state.player === "X" ? "O" : "X")
-    })
+    this.setState(
+      { player: (this.state.player === "X" ? "O" : "X") }
+    )
   }
   
   render() {

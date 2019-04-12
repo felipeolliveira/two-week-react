@@ -4,11 +4,8 @@ import "./style.css"
 
 
 class SquareButton extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      player: ""
-    }
+  state = {
+    player: ""
   }
 
   handletoggleChoise = () => {

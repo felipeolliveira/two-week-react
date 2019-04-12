@@ -11,14 +11,14 @@ class SquareButton extends Component {
     }
   }
 
-  toggleChoise = () => {
+  handletoggleChoise = () => {
     this.setState({
       player: (this.state.player === "X" ? "O" : "X")
     })
   }
   
   render() {
-    return <button onClick={this.toggleChoise} className="square-button">{this.state.player}</button>
+    return <button onClick={this.handletoggleChoise} className="square-button">{this.state.player}</button>
   }
 }
 

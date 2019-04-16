@@ -5,15 +5,9 @@ import SquareButton from "./../SquareButton"
 
 
 const squaresMultiplier = (number) => {
-  const arrayComponents = [];
-  let i = 0;
-  
-  for (i; i < number; i++) {
-    const component = <SquareButton key={i}/>
-    arrayComponents.push(component);
-  }
+  const squares = Array(+number).fill();
 
-  return arrayComponents;
+  return squares.map((square, index) => <SquareButton key={index} />);
 }
 
 const BoardSquare = (props) => (

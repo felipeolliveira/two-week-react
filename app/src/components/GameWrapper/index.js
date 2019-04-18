@@ -1,28 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 
 import "./style.css";
 import GameTitle from "./../GameTitle";
 import NextPlayer from "./../NextPlayer";
 import BoardSquare from "./../BoardSquare";
 
-class GameWrapper extends Component {
+class GameWrapper extends React.Component {
   state = {
     player: "O",
     nextPlayer: "X"
   }
 
-  handletoggleChoise = () => {
+  handleClick = (event) => {
+    console.log(event.target)
     this.setState({
       player: (this.state.player === "X" ? "O" : "X" ),
       nextPlayer: (this.state.nextPlayer === "X" ? "O" : "X" )
     });
-    console.log(this.state.nextPlayer, this.state.player, this)
   }
   
   render() {
     return <main className="game-wrapper">
       <GameTitle />
-      <BoardSquare onClick = {this.handletoggleChoise} player = {this.state.player}/>
+      <BoardSquare player = {this.state.player} onClick = {this.handleClick}/>
       <NextPlayer  nextPlayer={this.state.nextPlayer}/>
     </main>
   }

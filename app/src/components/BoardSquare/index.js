@@ -3,16 +3,17 @@ import React from "react";
 import "./style.css"
 import SquareButton from "./../SquareButton"
 
+const squaresMultiplier = (player, onClick) => {
+  const squares = Array(9).fill();
 
-const squaresMultiplier = (number) => {
-  const squares = Array(+number).fill();
-
-  return squares.map((square, index) => <SquareButton key={index} />);
+  return squares.map((square, index) => {
+    return <SquareButton key = {index} player = {player} onClick = {onClick}/>
+  });
 }
 
-const BoardSquare = (props) => (
+const BoardSquare = ({player, onClick}) => (
   <article className="board-square">
-    {squaresMultiplier(props.squads)}
+    {squaresMultiplier(player, onClick)}
   </article>
 )
 

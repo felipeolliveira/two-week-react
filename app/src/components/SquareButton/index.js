@@ -1,22 +1,35 @@
-import React, { Component } from "react";
+import React from "react";
 
 import "./style.css"
 
+// class SquareButton extends React.Component {
+//   state = {
+//     content: "X"
+//   }
 
-class SquareButton extends Component {
-  state = {
-    player: ""
-  }
 
-  handletoggleChoise = () => {
-    this.setState(
-      { player: (this.state.player === "X" ? "O" : "X") }
-    )
-  }
-  
-  render() {
-    return <button onClick={this.handletoggleChoise} className="square-button">{this.state.player}</button>
-  }
+
+//   handlePlayerContent(event) {
+//     // console.log(this.props.onClick);
+
+//     this.setState({
+//       content: this.props.player
+//     })
+
+//     // this.props.onClick();
+
+//   }
+
+//   render() {
+//     return <button className="square-button" onClick = {this.handlePlayerContent()}> {this.state.content} </button>
+//   }
+// }
+
+
+const SquareButton = ({player, onClick}) => {
+  return (
+    <button className="square-button" onClick = {onClick}>{player}</button>
+  )
 }
 
 export default SquareButton;

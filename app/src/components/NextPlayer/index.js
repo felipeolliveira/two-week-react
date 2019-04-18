@@ -2,6 +2,6 @@ import React from "react";
 
 import "./style.css"
 
-const NextPlayer = () => <p className="next-player">Próximo Jogador: <span className="player">X</span></p>;
+const NextPlayer = ({nextPlayer}) => <p className="next-player">Próximo Jogador: {nextPlayer}</p>;
 
 export default NextPlayer; 
